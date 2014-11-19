@@ -15,7 +15,11 @@ require 'syntax'
 require 'slowhandcuke'
 require 'htmlcuke'
 
+require_all('lib')
+
 Before do
-  $cuke = self
+  $html_report = self
 end
+
+World(PageObject::PageFactory)
 
