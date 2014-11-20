@@ -9,7 +9,6 @@ end
 
 Given(/^I am on the Booking main page$/) do
   visit(BookingComMainPage)
-  take_screenshot('Booking.com Main Page')
 end
 
 When(/^I enter "([^"]*)" in the Destination field$/) do |name|
@@ -44,7 +43,6 @@ end
 
 Then(/^I see the number of properties available$/) do
   on(BookingComSearchResultsPage).get_properties_info
-  take_screenshot('Booking.com Search Results Page')
 end
 
 And(/^I make a sample room check for "([^"]*)" on the search page$/) do |hotel_name|
@@ -54,5 +52,10 @@ end
 And(/^I view the details of the hotel I selected$/) do
   on(BookingComHotelDetailsPage).switch_to_window
   on(BookingComHotelDetailsPage).desired_element?
-  take_screenshot('Booking.com Hotel Details Page')
+  binding.pry
+  puts 'here'
+end
+
+And(/^I take a screenshot of the "([^"]*)"$/) do |link_text|
+  take_screenshot(link_text)
 end
