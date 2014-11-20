@@ -1,0 +1,1 @@
+default: --require features --color --format Htmlcuke::Formatter --out reports/cucumber_report.html --format Slowhandcuke::Formatter

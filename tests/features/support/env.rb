@@ -15,7 +15,7 @@ require 'syntax'
 require 'slowhandcuke'
 require 'htmlcuke'
 
-require_all('lib')
+require_all 'lib'
 
 Before do
   $html_report = self

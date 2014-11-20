@@ -4,5 +4,10 @@ Feature:
 
   Scenario: Navigate to Booking.com website
     Given I am on the Booking main page
-    When I enter "Beijing, China" in the Destination field
-    Then The text "Beijing, China" should appear in the Destination field
+    And I enter "Beijing, China" in the Destination field
+    And I enter the Check-In Date of "February, 8, 2015" in the check-in field
+    And I enter the Check-Out Date of "February, 9, 2015" in the check-out field
+    And I search the booking
+    And I see the number of properties available
+    And I make a sample room check for "Legendale" on the search page
+    And I view the details of the hotel I selected
