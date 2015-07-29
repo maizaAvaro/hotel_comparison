@@ -2,11 +2,12 @@
 # encoding UTF-8
 
 class Array
-  def second
+  def position(index)
     self.each_with_index do |n, i|
-      if i == 1
+      if i == index.to_i
         return n
       end
     end
+    nil
   end
 end

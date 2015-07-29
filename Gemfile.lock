@@ -74,7 +74,6 @@ GEM
       selenium-webdriver (>= 2.18.0)
     watir-webdriver-performance (0.2.4)
       watir-webdriver
-      watir-webdriver
     websocket (1.2.1)
     yml_reader (0.3)
 
@@ -96,3 +95,6 @@ DEPENDENCIES
   syntax
   watir-webdriver
   watir-webdriver-performance
+
+BUNDLED WITH
+   1.10.6
